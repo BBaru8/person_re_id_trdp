@@ -19,7 +19,7 @@ Tested on Windows 10 with MATLAB 2018b(Student License)
 
 # Author's Repository is available at https://github.com/RSL-NEU/person-reid-benchmark
 
-#Instructions for Author's repository
+##Instructions for Author's repository
 ### Quick Start for Author's repository
 * Clone this repository
 * Run a quick example in run_experiment_benchmark.m
