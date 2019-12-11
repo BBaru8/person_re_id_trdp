@@ -1,5 +1,5 @@
 # Person Re-identification Benchmark
-This repository hosts the codebase of Tutored Research Development Project (TRDP) completed by Ms. Bithi Barua and Mr. Kazi Ahmed Asif Fuad. This modified repository of 
+This repository hosts the codebase of Tutored Research Development Project (TRDP) completed by Bithi Barua and Kazi Ahmed Asif Fuad. This modified repository of 
 State of Art "A Systematic Evaluation and Benchmark for Person Re-Identification: Features, Metrics, and Datasets." done by:
 Karanam, S., Gou, M., Wu, Z., Rates-Borras, A., Camps, O., & Radke, R. J. (2018). 
 [A Systematic Evaluation and Benchmark for Person Re-Identification: Features, Metrics, and Datasets.](https://arxiv.org/abs/1605.09653) IEEE Transactions on Pattern Analysis and Machine Intelligence, accepted February 2018.
@@ -10,14 +10,16 @@ We have visualized the images with their corresponding ranking to understand the
 
 ### Quick Start for our repository
 * Clone this repository
-* Copy the VIPeR dataset from this link: https://www.dropbox.com/sh/joa1324b1fkk6w3/AACBK5_0JYOWB3FMlZT0NTtXa?dl=0 and copy to DataOriginal folder.
+* Copy the VIPeR dataset from this link: https://www.dropbox.com/sh/joa1324b1fkk6w3/AACBK5_0JYOWB3FMlZT0NTtXa?dl=0 and copy to DataOriginal folder.The structure should be ./DataOriginal/VIPeR/(cam1,cam2).
 * Run re_id_trdp.mlapp (which requires MATLAB installed with appdesigner)
 * All the results will be showed in cmd in MATLAB and Visual Failcases will be stored in Visual_FailCasesImagaes folder.
 
 Tested on Windows 10 with MATLAB 2018b(Student License) 
 
-Author's Repository is available at https://github.com/RSL-NEU/person-reid-benchmark
-Instructions for Author's repository
+
+# Author's Repository is available at https://github.com/RSL-NEU/person-reid-benchmark
+
+#Instructions for Author's repository
 ### Quick Start for Author's repository
 * Clone this repository
 * Run a quick example in run_experiment_benchmark.m
