@@ -3,7 +3,7 @@ clear all;
 clc;
 net=alexnet;
 inputSize = net.Layers(1).InputSize;
-imds = imageDatastore('mix','IncludeSubfolders',true,'LabelSource','foldernames');
+imds = imageDatastore('mix','IncludeSubfolders',true,'LabelSource','foldernames'); %Set the folder name, for us, it is 'mix'
 [imdsTrain,imdsValidation] = splitEachLabel(imds,0.7);
 
 if isa(net,'SeriesNetwork')      
@@ -38,6 +38,7 @@ ylim([0,10])
 layers = lgraph.Layers;
 connections = lgraph.Connections;
 
+% Select the layers to freeze
 layers(1:10) = freezeWeights(layers(1:10));
 lgraph = createLgraphUsingConnections(layers,connections);
 pixelRange = [-30 30];
@@ -52,6 +53,7 @@ augimdsTrain = augmentedImageDatastore(inputSize(1:2),imdsTrain, ...
     'DataAugmentation',imageAugmenter);
 
 augimdsValidation = augmentedImageDatastore(inputSize(1:2),imdsValidation);
+% Configuration for training the network
 options = trainingOptions('sgdm', ...
     'MiniBatchSize',10, ...
     'MaxEpochs',6, ...
@@ -62,4 +64,4 @@ options = trainingOptions('sgdm', ...
     'Verbose',false, ...
     'Plots','training-progress');
 net = trainNetwork(augimdsTrain,lgraph,options);
-save('AlexNetTrainedSmallmarket.mat','net');
+save('AlexNetTrainedSmallmarket.mat','net'); % change according to your model name

@@ -16,11 +16,13 @@ We have visualized the images with their corresponding ranking to understand the
 
 Tested on Windows 10 with MATLAB 2018b(Student License) 
 
+For Transfer Learning of MATLAB CNN, please follow "ReadMeForTransferLearning.txt".
 
 # Author's Repository is available at https://github.com/RSL-NEU/person-reid-benchmark
 
 ##Instructions for Author's repository
-### Quick Start for Author's repository
+
+# Quick Start for Author's repository
 * Clone this repository
 * Run a quick example in run_experiment_benchmark.m
 * Read the results for VIPeR dataset with WHOS feature and XQDA
